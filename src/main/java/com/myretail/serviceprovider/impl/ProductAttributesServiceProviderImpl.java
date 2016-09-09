@@ -2,8 +2,8 @@ package com.myretail.serviceprovider.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,6 @@ import com.myretail.exception.handler.ServiceUnavailableException;
 import com.myretail.product.domain.ProductAttributesResponse;
 
 @Component
-@Configuration
 public class ProductAttributesServiceProviderImpl {
 
 	private static final Logger LOGGER = LoggerFactory
